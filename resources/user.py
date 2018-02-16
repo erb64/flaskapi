@@ -15,7 +15,7 @@ class GetUser(Resource):
 
         if user:
             return {'user': user.json()}, 200
-        return {'error': 'User not found'}, 404
+        return {'error': 'User not found'}, 401
 
 # append api endpoint for the 
 api.add_resource(GetUser, user_routes['read one user']['url'])
