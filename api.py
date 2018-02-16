@@ -2,7 +2,7 @@ import os
 from flask import Flask 
 from flask_restful import Api, reqparse
 from flask_sqlalchemy import SQLAlchemy 
-from flask_cors import CORS, cross_origin
+# from flask_cors import CORS, cross_origin
 
 db_path = os.path.join(os.path.dirname(__file__), 'app.db')
 db_uri = 'sqlite:///{}'.format(db_path)
