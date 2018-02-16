@@ -17,8 +17,8 @@ app.config['SECRET_KEY'] = 'super secret'
 
 api = Api(app)
 
-parser = reqparse.RequestParser()
-parser.add_argument('task')
+#parser = reqparse.RequestParser()
+#parser.add_argument('task')
 
 #import routes and resources for user
 from routes.user_routes import *
