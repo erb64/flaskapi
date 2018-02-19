@@ -1,4 +1,5 @@
 from config.db import db
+import datetime
 
 class TaskModel(db.Model):
     """This class creates the models for a user object"""
@@ -12,13 +13,13 @@ class TaskModel(db.Model):
     create_date = db.Column('create_date', db.TIMESTAMP, default=db.func.current_timestamp)
     active = db.Column('active', db.Boolean(), default=True)
 
-    def __init__(self, title, author, body):
+    def __init__(self, new_task):
         #this method is used to initialize task objects
         self.title = new_task['title']
         self.author = new_task['author']
         self.body = new_task['body']
-        self.create_date = new_task['create_date']
-        self.active = new_task['active']
+        self.create_date = datetime.datetime.now
+        self.active = True
 
     def __repr__(self):
         """This method returns a string representation of the user object"""
