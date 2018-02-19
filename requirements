@@ -1,0 +1,10 @@
+Windows: install python3
+Open cmd with administrator privileges 
+
+python -m pip install --upgrade pip
+pip install flask
+pip install flask_sqlalchemy
+pip install passlib?
+pip install flask-mysqldb
+ FOR LINUX sudo apt-get install mysql-server libmysqlclient-dev
+ 

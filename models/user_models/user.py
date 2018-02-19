@@ -1,4 +1,5 @@
 from config.db import db
+import datetime
 
 class UserModel(db.Model):
     """This class creates the models for a user object"""
@@ -19,7 +20,7 @@ class UserModel(db.Model):
         self.email = new_user['email']
         self.username = new_user['username']
         self.password = new_user['password']
-        self.register_date = new_user['register_date']
+        self.register_date = datetime.datetime.now()
 
     def __repr__(self):
         """This method returns a string representation of the user object"""

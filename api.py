@@ -1,6 +1,6 @@
 import os
 from flask import Flask 
-from flask_restful import Api, reqparse
+from flask_restful import Api, reqparse, Resource 
 from flask_sqlalchemy import SQLAlchemy 
 from flask_cors import CORS, cross_origin
 
